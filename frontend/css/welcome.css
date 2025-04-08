@@ -1,0 +1,99 @@
+@import url(./utils/background.css);
+
+.welcome-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+.logo {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    color: var(--text-on-primary);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px var(--shadow-color);
+    color: var(--text-on-primary);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-on-primary);
+    border: 2px solid var(--text-on-primary);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.feature {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature i {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: var(--text-on-primary);
+}
+
+.feature p {
+    font-size: 14px;
+    margin: 0;
+    color: var(--text-on-primary);
+    text-shadow: 1px 1px 2px var(--shadow-color);
+}

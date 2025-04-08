@@ -1,0 +1,169 @@
+@import url("./variables.css");
+
+.driver-list {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--bg-card);
+  border-top: 3px solid var(--primary-color);
+  padding: 24px;
+  box-shadow: 0 -8px 24px var(--shadow-color);
+  height: 45vh;
+  z-index: 1000;
+  box-sizing: border-box;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  transform: translateY(100%);
+  color: var(--text-primary);
+  border-radius: 24px 24px 0 0;
+}
+
+#driverList:empty::after {
+  content: 'Loading professional drivers...';
+  display: block;
+  text-align: center;
+  padding: 24px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.driver-list.expanded {
+  transform: translateY(0);
+  height: 60vh;
+}
+
+.driver-list-header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 28px;
+  margin: -24px -24px 20px -24px;
+  border-radius: 24px 24px 0 0;
+  z-index: 10;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.driver-list-header h2 {
+  color: var(--text-on-primary) !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px;
+  margin: 0 0 16px 0 !important;
+}
+
+.driver-list-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.driver-filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-on-primary);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.filter-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: var(--text-on-primary);
+  color: var(--primary-color);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.filter-btn.active:hover {
+  transform: scale(1.05) translateY(-1px);
+}
+
+.driver-list.full-height {
+  height: 100vh;
+}
+
+.driver-list.full-height .drivers-container {
+  max-height: calc(100vh - 120px);
+  padding-bottom: 64px; /* Increased bottom padding to match the non-expanded state */
+}
+
+.driver-list.full-height .driver-list-header {
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.drivers-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  padding-bottom: 80px;
+  overflow-y: auto;
+  min-height: 200px;
+  max-height: calc(45vh - 140px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--bg-elevated);
+  box-sizing: border-box;
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  margin: 0;
+  position: relative;
+}
+
+.drivers-container:empty::after {
+  content: 'Finding professional drivers in your area...';
+  display: block;
+  text-align: center;
+  padding: 32px;
+  color: var(--text-secondary);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.drivers-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.drivers-container::-webkit-scrollbar-track {
+  background: var(--bg-elevated);
+  border-radius: 8px;
+}
+
+.drivers-container::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 8px;
+  border: 2px solid var(--bg-elevated);
+}
+
+.drivers-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-hover);
+}

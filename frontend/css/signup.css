@@ -1,0 +1,44 @@
+@import url(./utils/forms.css);
+
+.form-group input[type="file"] {
+    padding: 8px;
+    border: 2px dashed var(--border-medium);
+    background-color: var(--bg-elevated);
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.form-group input[type="file"]:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+}
+
+.file-info {
+    color: var(--text-secondary);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.preview-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.preview-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    object-fit: cover;
+    display: none;
+}
+
+.success-message {
+    display: none;
+    background-color: var(--success-bg);
+    color: var(--success-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}

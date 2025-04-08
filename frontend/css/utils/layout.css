@@ -1,0 +1,50 @@
+@import url("./variables.css");
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow-color);
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  overflow: hidden;
+  color: var(--text-primary);
+}
+
+.search-section {
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  overflow: hidden;
+}
+
+.search-section.collapsed form,
+.search-section.collapsed #results {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.search-section .header {
+  padding: 10px 0;
+  margin: 0;
+  opacity: 1 !important;
+  max-height: none !important;
+}
+
+.toggle-btn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1000;
+}
+
+.toggle-btn.rotated {
+  transform: rotate(180deg);
+}

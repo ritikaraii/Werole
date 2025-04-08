@@ -1,0 +1,20 @@
+@import url("./variables.css");
+
+.add-background {
+    background: linear-gradient(var(--overlay-color), var(--overlay-color)),
+                url('../../images/car-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}

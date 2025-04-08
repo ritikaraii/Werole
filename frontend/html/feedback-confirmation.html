@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Feedback</title>
+    <link rel="stylesheet" href="../css/feedback-confirmation.css">
+</head>
+<body class="add-background">
+    <div class="container">
+        <div class="feedback-card">
+            <div class="feedback-header">
+                <div class="icon-container">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Thank You for Riding with Us!</h1>
+                <p>Your booking details have been sent to your email.</p>
+            </div>
+
+            <div class="feedback-section">
+                <h2>Help Us Improve</h2>
+                <p>Please take a moment to rate your booking experience</p>
+
+                <form id="feedbackForm">
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                        <span class="rating-text">Select your rating</span>
+                    </div>
+
+                    <div class="feedback-input">
+                        <label for="feedback">Your Feedback (optional)</label>
+                        <textarea id="feedback" name="feedback" rows="4" placeholder="Share your thoughts on how we can improve..."></textarea>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Feedback
+                        </button>
+                        <button type="button" class="skip-btn" id="skipBtn">
+                            <i class="fas fa-home"></i>
+                            Return to Home
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/feedback-confirmation.js"></script>
+</body>
+</html>

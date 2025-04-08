@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Details</title>
+    <link rel="stylesheet" href="../css/driver-details.css">
+</head>
+<body class="add-background">
+    <div class="container">
+        <div id="driverDetails" class="driver-profile hidden">
+            <div class="profile-header">
+                <a class="back-button" id="backButton">
+                    <i class="fas fa-arrow-left"></i> Back
+                </a>
+                <div class="driver-name"></div>
+                <div class="driver-rating"></div>
+            </div>
+            <div class="profile-main">
+                <div class="profile-image-section">
+                    <img class="profile-image" alt="Driver photo">
+                    <img class="car-image" alt="Car image">
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>Car Model</h3>
+                        <p class="car-model"></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Rate</h3>
+                        <p class="rate"></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Total Trips</h3>
+                        <p class="trips"></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Experience</h3>
+                        <p class="experience"></p>
+                    </div>
+                    <div id="tripPriceSection" class="trip-price hidden">
+                        <h3 id="routeDetails">Route Price</h3>
+                        <p class="total-price"></p>
+                    </div>
+                    <button class="book-btn">
+                        <i class="fas fa-check-circle"></i>
+                        Book This Driver
+                    </button>
+                    <button class="subscribe-btn">
+                        <i class="fas fa-calendar-alt"></i>
+                        Subscribe the driver for this week
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="loading" class="loading">Loading driver details...</div>
+        <div id="pastDrives" class="past-drives hidden">
+            <div class="past-drives-header">
+                <i class="fas fa-history"></i> Past Drives
+            </div>
+            <div id="drivesContainer"></div>
+        </div>
+    </div>
+
+    <!-- Calendar Modal -->
+    <div class="calendar-modal" id="calendarModal">
+        <div class="calendar-content">
+            <div class="calendar-header">
+                <h2>Select Days for Weekly Subscription</h2>
+                <button class="close-calendar" id="closeCalendar">&times;</button>
+            </div>
+            <div class="calendar-days" id="calendarDays">
+                <div class="day-item" data-day="monday">Monday</div>
+                <div class="day-item" data-day="tuesday">Tuesday</div>
+                <div class="day-item" data-day="wednesday">Wednesday</div>
+                <div class="day-item" data-day="thursday">Thursday</div>
+                <div class="day-item" data-day="friday">Friday</div>
+            </div>
+            <div class="seats-selector">
+                <label for="seats">Number of Passengers:</label>
+                <input type="number" id="seats" min="1" max="4" value="1">
+            </div>
+            <button class="confirm-subscription" id="confirmSubscription">
+                Confirm Weekly Subscription
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="../js/driver-details.js"></script>
+</body>
+</html>

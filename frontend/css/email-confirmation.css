@@ -1,0 +1,113 @@
+@import url(./utils/background.css);
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.confirmation-card {
+    background: var(--bg-card);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    overflow: hidden;
+}
+
+.confirmation-header {
+    background: var(--primary-color);
+    color: var(--text-on-primary);
+    padding: 30px;
+    text-align: center;
+}
+
+.confirmation-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.subtitle {
+    margin: 10px 0 0;
+    opacity: 0.9;
+}
+
+.email-form {
+    padding: 30px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.booking-summary {
+    background: var(--bg-elevated);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.booking-summary h3 {
+    margin: 0 0 15px;
+    color: var(--text-primary);
+}
+
+.summary-details {
+    color: var(--text-secondary);
+}
+
+.summary-item {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.confirm-btn {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+.confirm-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.cancel-btn {
+    background-color: var(--error-bg);
+    color: var(--error-color);
+}
+
+.cancel-btn:hover {
+    background-color: var(--error-color);
+    color: white;
+}

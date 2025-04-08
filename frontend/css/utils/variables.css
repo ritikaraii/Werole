@@ -1,0 +1,53 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+:root {
+  /* Primary Colors */
+  --primary-color: #2c5282;
+  --primary-hover: #1a365d;
+  --primary-light: #ebf8ff;
+  
+  /* Secondary Colors */
+  --secondary-color: #4299e1;
+  --secondary-hover: #2b6cb0;
+  --secondary-light: rgba(66, 153, 225, 0.1);
+  
+  /* Background Colors */
+  --bg-main: #f7fafc;
+  --bg-card: #ffffff;
+  --bg-elevated: #edf2f7;
+  --bg-input: #ffffff;
+  
+  /* Text Colors */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
+  --text-on-primary: #ffffff;
+  
+  /* Border Colors */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e0;
+  --border-input: #a0aec0;
+  
+  /* Status Colors */
+  --success-color: #38a169;
+  --success-bg: #f0fff4;
+  --warning-color: #d69e2e;
+  --warning-bg: #fffff0;
+  --error-color: #e53e3e;
+  --error-bg: #fff5f5;
+  
+  /* Special Colors */
+  --gold-star: #ecc94b;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --overlay-color: rgba(45, 55, 72, 0.8);
+  
+  /* Car Type Colors */
+  --sedan-color: #805ad5;
+  --sedan-bg: rgba(128, 90, 213, 0.1);
+  --suv-color: #4299e1;
+  --suv-bg: rgba(66, 153, 225, 0.1);
+  
+  /* Scrollbar Colors */
+  --scrollbar-track: #edf2f7;
+  --scrollbar-thumb: #718096;
+}

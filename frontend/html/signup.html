@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body class="add-background">
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header">
+                <h1>Create Your Passenger Account</h1>
+            </div>
+            <div class="form-form">
+                <div class="success-message" id="successMessage">
+                    Account created successfully! Redirecting to home page...
+                </div>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required minlength="6">
+                        <div class="error-message" id="passwordError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required minlength="2">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="picture">Profile Picture (Optional)</label>
+                        <input type="file" id="picture" name="picture" accept="image/*">
+                        <div class="file-info">
+                            Supported formats: JPG, PNG, GIF (Max size: 5MB)
+                        </div>
+                        <div class="error-message" id="pictureError"></div>
+                    </div>
+
+                    <div class="preview-section">
+                        <img id="imagePreview" class="preview-image" alt="Profile preview">
+                    </div>
+
+
+                    <button type="submit" class="enter-btn">
+                        <i class="fas fa-user-plus"></i>
+                        Create Account
+                    </button>
+                </form>
+                <div class="links">
+                    <a href="/html/login.html">Already have an account? Sign in!</a>
+                </div>
+            </div>
+        </div>
+        <a href="/html/welcome.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+    </div>
+
+    <script type="module" src="/js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@import url(./utils/background.css);
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.confirmation-card {
+    background: var(--bg-card);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    overflow: hidden;
+}
+
+.confirmation-header {
+    background: var(--primary-color);
+    color: var(--text-on-primary);
+    padding: 20px;
+    text-align: center;
+}
+
+.confirmation-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.trip-details {
+    padding: 20px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--bg-elevated);
+    border-radius: 10px;
+}
+
+.detail-icon {
+    width: 40px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.detail-content {
+    flex: 1;
+}
+
+.detail-label {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.driver-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-light);
+}
+
+.driver-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.driver-details h2 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+
+.driver-rating {
+    color: var(--gold-star);
+}
+
+.car-details {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.price-section {
+    background: var(--primary-light);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--border-light);
+}
+
+.price-label {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price-value {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.actions {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+.confirm-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.cancel-btn {
+    background-color: var(--bg-elevated);
+    color: var(--text-primary);
+    border: 1px solid var(--border-medium);
+}
+
+.cancel-btn:hover {
+    background-color: var(--bg-input);
+}
+
+.eta {
+    text-align: center;
+    padding: 20px;
+    background: var(--warning-bg);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.eta-label {
+    color: var(--warning-color);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.eta-value {
+    color: var(--warning-color);
+    font-size: 24px;
+    font-weight: bold;
+}

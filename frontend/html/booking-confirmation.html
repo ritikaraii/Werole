@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="../css/booking-confirmation.css">
+</head>
+<body class="add-background">
+    <div class="container">
+        <div class="confirmation-card">
+            <div class="confirmation-header">
+                <h1>Booking Confirmation</h1>
+            </div>
+            <div class="trip-details">
+                <div class="detail-row">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <div class="detail-label">Pick-up Location</div>
+                        <div class="detail-value" id="origin"></div>
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-icon">
+                        <i class="fas fa-location-dot"></i>
+                    </div>
+                    <div class="detail-content">
+                        <div class="detail-label">Destination</div>
+                        <div class="detail-value" id="destination"></div>
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <div class="detail-label">Estimated Travel Time</div>
+                        <div class="detail-value" id="duration"></div>
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="detail-content">
+                        <div class="detail-label">Distance</div>
+                        <div class="detail-value" id="distance"></div>
+                    </div>
+                </div>
+                <div class="detail-row subscription-details hidden" id="subscriptionDetails">
+                    <div class="detail-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="detail-content">
+                        <div class="detail-label">Subscribed</div>
+                        <div class="detail-value" id="subscription"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="eta">
+                <div class="eta-label">Estimated Driver Arrival</div>
+                <div class="eta-value" id="arrival-time"></div>
+            </div>
+            <div class="driver-info">
+                <img id="driver-photo" src="" alt="Driver" class="driver-photo">
+                <div class="driver-details">
+                    <h2 id="driver-name"></h2>
+                    <div class="driver-rating" id="driver-rating"></div>
+                    <div class="car-details" id="car-model"></div>
+                </div>
+            </div>
+            <div class="price-section">
+                <div class="price-label" id="priceLabel">Total Trip Price</div>
+                <div class="price-value" id="price"></div>
+            </div>
+            <div class="actions">
+                <button class="action-btn confirm-btn" id="confirmBtn">
+                    <i class="fas fa-check-circle"></i>
+                    Confirm Booking
+                </button>
+                <button class="action-btn cancel-btn" id="cancelBtn">
+                    <i class="fas fa-times-circle"></i>
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/booking-confirmation.js"></script>
+</body>
+</html>

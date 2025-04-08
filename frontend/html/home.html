@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Selector</title>
+    <link rel="stylesheet" href="../css/home.css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="container">
+      <div class="search-section collapsible">
+        <div class="header">
+          <div class="header-content">
+            <div class="header-left">
+              <h1>Welcome to Car Service</h1>
+              <p class="subtitle">Your trusted ride-sharing platform</p>
+            </div>
+            <div class="header-buttons">
+              <button type="button" id="toggleUIButton" class="toggle-btn">▼</button>
+            </div>
+          </div>
+        </div>
+
+        <form id="travelForm">
+          <label for="origin">Origin:</label>
+          <input type="text" id="origin" name="origin" class="origin-input" placeholder="Enter origin location" autocomplete="off" />
+          <div id="originSuggestions" class="suggestions"></div>
+          <br /><br />
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" name="destination" class="destination-input" placeholder="Enter destination location" autocomplete="off" />
+          <div id="destinationSuggestions" class="suggestions"></div>
+          <br /><br />
+          <label for="passengers">Number of Passengers:</label>
+          <select id="passengers" name="passengers" required>
+            <option value="1">1 Passenger</option>
+            <option value="2">2 Passengers</option>
+            <option value="3">3 Passengers</option>
+            <option value="3">4 Passengers</option>
+          </select>
+          <br /><br />
+          <button type="submit">Continue</button>
+        </form>
+        <div id="results"></div>
+      </div>
+      <div id="driverList" class="driver-list">
+        <div class="driver-list-header">
+          <h2>Available Professional Drivers</h2>
+          <div class="driver-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="sedan">Sedan</button>
+            <button class="filter-btn" data-filter="suv">SUV</button>
+          </div>
+        </div>
+        <div class="drivers-container"></div>
+      </div>
+    </div>
+  </div>
+    <script type="module" src="/js/home.js"></script>
+  </body>
+</html>

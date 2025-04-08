@@ -1,0 +1,10 @@
+services:
+  app:
+    build: 
+      context: .
+      no_cache: true
+    env_file:
+      - .env.docker
+    ports:
+      - "3000:3000"
+      - "5000:5000"
